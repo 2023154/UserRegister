@@ -1,11 +1,14 @@
 package dev.java10x.CadastroDeNinja;
 
 import jakarta.persistence.*;
+import lombok.NoArgsConstructor;
 
 //this transform a class to entity
 @Entity//this is a anotation entity
 @Table(name = "tb_Cadastro")// this is anotation table
 public class NinjaModel {
+
+
 
 
     @Id// the id will be gerated altomaticly with the generate value
@@ -22,7 +25,8 @@ public class NinjaModel {
     //@ a ninja has only one mission
     @ManyToOne
     @JoinColumn(name = "missons_id")
-    private MissoesModel misson;
+    private MissionModel misson;
+
 
 
     public NinjaModel(String name, String email, String age) {
