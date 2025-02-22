@@ -1,23 +1,28 @@
 package dev.java10x.CadastroDeNinja;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 //this transform a class to entity
-@Entity
-@Table(name = "tb_Cadastro")
+@Entity//this is a anotation entity
+@Table(name = "tb_Cadastro")// this is anotation table
 public class NinjaModel {
 
 
-    @Id
-    @GeneratedValue
+    @Id// the id will be gerated altomaticly with the generate value
+    @GeneratedValue(strategy = GenerationType.IDENTITY)//this is going to generate a id value number.
 
-    Long id;
-    String name;
-    String email;
-    String age;
+
+    private Long id;
+    private String name;
+    private String email;
+    private String age;
+
+
+
+    //@ a ninja has only one mission
+    @ManyToOne
+    @JoinColumn(name = "missons_id")
+    private MissoesModel misson;
 
 
     public NinjaModel(String name, String email, String age) {
