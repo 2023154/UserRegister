@@ -1,7 +1,7 @@
 package dev.java10x.CadastroDeNinja;
 
 import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
+import mission.MissionModel;
 
 //this transform a class to entity
 @Entity//this is a anotation entity
