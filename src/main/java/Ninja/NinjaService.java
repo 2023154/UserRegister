@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeNinja;
+package Ninja;
 
 public class NinjaService {
 }

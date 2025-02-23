@@ -1,4 +1,4 @@
-package dev.java10x.CadastroDeNinja;
+package Ninja;
 
 import jakarta.persistence.*;
 import mission.MissionModel;

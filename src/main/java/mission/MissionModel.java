@@ -1,7 +1,8 @@
-package dev.java10x.CadastroDeNinja;
+package mission;
 
 //here is the model of the mission and it will describe what kind mission is this and the level of difficult.
 
+import Ninja.NinjaModel;
 import jakarta.persistence.*;
 import lombok.*;
 
